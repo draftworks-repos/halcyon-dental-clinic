@@ -1,0 +1,33 @@
+.notfound-container {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  background-color: var(--color-ivory);
+}
+
+.notfound-code {
+  font-family: var(--font-serif);
+  font-size: clamp(4rem, 10vw, 8rem);
+  color: var(--color-peach);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.notfound-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  color: var(--color-forest);
+  margin-bottom: 1rem;
+}
+
+.notfound-desc {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  max-width: 440px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}

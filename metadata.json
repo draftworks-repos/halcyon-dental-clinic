@@ -1,0 +1,6 @@
+{
+  "name": "Halcyon Dental Studio",
+  "description": "Boutique dental practice offering gentle care, quiet rooms, and transparent advice in an editorial aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

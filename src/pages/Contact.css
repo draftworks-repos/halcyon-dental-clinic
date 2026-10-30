@@ -1,0 +1,157 @@
+.contact-hero {
+  padding-block: clamp(3.5rem, 6vw, 5.5rem);
+  background-color: var(--color-ivory);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(3rem, 5vw, 5.5rem);
+  padding-block: clamp(4rem, 6vw, 7rem);
+}
+
+@media (min-width: 960px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+
+.contact-left-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  color: var(--color-forest);
+  margin-bottom: 2.25rem;
+  line-height: 1.15;
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.contact-info-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-sage);
+  color: var(--color-forest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.contact-info-title {
+  font-weight: 600;
+  font-size: 1.0625rem;
+  color: var(--color-forest);
+  margin-bottom: 0.35rem;
+}
+
+.contact-info-text {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.contact-info-subtext {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
+
+.contact-emergency-box {
+  padding: 1.5rem 1.75rem;
+  border-radius: 20px;
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-border);
+  margin-top: 2.5rem;
+}
+
+.map-placeholder-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #e5e9e4;
+  border: 1px solid var(--color-border);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+  box-shadow: 0 10px 25px -5px rgba(18, 59, 50, 0.08);
+}
+
+.map-pin-badge {
+  background-color: var(--color-forest);
+  color: var(--color-ivory);
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side: Consultation Form Card */
+.contact-card {
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: 28px;
+  padding: clamp(2.25rem, 4.5vw, 3.5rem);
+  box-shadow: 0 20px 45px -10px rgba(18, 59, 50, 0.06);
+}
+
+.contact-card-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  color: var(--color-forest);
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
+}
+
+.contact-card-desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 2.25rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-field-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-forest);
+  margin-bottom: 0.5rem;
+}

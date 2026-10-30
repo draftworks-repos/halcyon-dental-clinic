@@ -1,0 +1,125 @@
+.dentists-section {
+  background-color: var(--color-forest);
+  color: var(--color-ivory);
+  padding-block: clamp(4.5rem, 8vw, 8rem);
+  position: relative;
+}
+
+.dentists-header-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+@media (min-width: 960px) {
+  .dentists-header-row {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.dentists-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.25rem, 4.5vw, 4.25rem);
+  line-height: 1.08;
+  color: var(--color-ivory);
+  max-width: 650px;
+}
+
+.dentists-subtitle {
+  font-size: clamp(0.9375rem, 1.1vw, 1.0625rem);
+  line-height: 1.6;
+  color: var(--color-text-light-muted);
+  max-width: 440px;
+}
+
+.dentists-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+@media (min-width: 640px) {
+  .dentists-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dentists-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.dentist-card {
+  background-color: var(--color-forest-deep);
+  border: 1px solid var(--color-border-dark);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.dentist-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(232, 179, 156, 0.35);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
+}
+
+.dentist-image-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 4.4;
+  overflow: hidden;
+  background-color: #0b2520;
+}
+
+.dentist-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.dentist-card:hover .dentist-image {
+  transform: scale(1.03);
+}
+
+.dentist-exp-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(245, 242, 233, 0.92);
+  color: var(--color-forest);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dentist-info {
+  padding: 1.5rem 1.75rem;
+  background-color: var(--color-forest-deep);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dentist-name {
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  color: var(--color-ivory);
+  letter-spacing: -0.01em;
+}
+
+.dentist-role {
+  font-size: 0.8125rem;
+  color: var(--color-text-light-muted);
+}

@@ -1,0 +1,38 @@
+.blog-post-hero {
+  padding-block: clamp(3rem, 5vw, 5rem);
+  background-color: var(--color-ivory);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.blog-post-content {
+  max-width: 760px;
+  margin-inline: auto;
+  padding-block: clamp(3rem, 5vw, 5rem);
+}
+
+.blog-post-featured-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 0 20px 40px -15px rgba(18, 59, 50, 0.12);
+}
+
+.blog-post-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: 1.75rem;
+}
+
+.blog-author-box {
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 3.5rem;
+}
